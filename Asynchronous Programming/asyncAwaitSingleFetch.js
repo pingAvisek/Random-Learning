@@ -7,7 +7,7 @@ let userUrl = "https://jsonplaceholder.typicode.com/users";
 let fetchData = async () => {
   let response = await fetch(userUrl);
   let data = await response.json();
-  console.log(data[0].address.geo);
+  console.log(data);
 };
 
 fetchData();
